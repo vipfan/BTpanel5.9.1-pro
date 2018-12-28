@@ -17,7 +17,7 @@ echo -e "${red}欢迎安装宝塔面板Pro版！"
 #确认安装
 while [ "$go" != 'y' ] && [ "$go" != 'n' ]
 do
-    read -p -e "${blue}确定要安装吗？(y/n): " go;
+    read -p "${blue}确定要安装吗？(y/n): " go;
 done
 if [ "$go" = 'n' ];then
     exit;
