@@ -84,10 +84,10 @@ install_btPanel_for_APT() {
 }
 
 #破解步骤
-crack_bt_panel() {
-    /etc/init.d/bt stop
-    /etc/init.d/bt restart
-}
+#crack_bt_panel() {
+#    /etc/init.d/bt stop
+#    /etc/init.d/bt restart
+#}
 
 #定时重启宝塔面板
 execute_bt_panel() {
