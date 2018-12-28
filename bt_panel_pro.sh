@@ -83,12 +83,6 @@ install_btPanel_for_APT() {
     wget -O update.sh https://raw.githubusercontent.com/vipfan/BTpanel5.9.1-pro/master/update_pro.sh && bash update.sh pro
 }
 
-#破解步骤
-#crack_bt_panel() {
-#    /etc/init.d/bt stop
-#    /etc/init.d/bt restart
-#}
-
 #定时重启宝塔面板
 execute_bt_panel() {
     if grep '/etc/init.d/bt restart' /etc/crontab; then
