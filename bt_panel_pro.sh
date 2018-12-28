@@ -12,12 +12,12 @@ plain='\033[0m'
 [ $(id -u) != "0" ] && { echo -e "${red}[错误]${plain} 你必须以 root 用户执行此安装程序"; exit 1; }
 
 echo ""
-echo "${red}欢迎安装宝塔面板Pro版！"
+echo -e "${red}欢迎安装宝塔面板Pro版！"
 
 #确认安装
 while [ "$go" != 'y' ] && [ "$go" != 'n' ]
 do
-    read -p "${blue}确定要安装吗？(y/n): " go;
+    read -p -e "${blue}确定要安装吗？(y/n): " go;
 done
 if [ "$go" = 'n' ];then
     exit;
